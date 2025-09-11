@@ -289,10 +289,7 @@ textarea{
     font-weight: bolder;
     margin-bottom: 1.7rem;
 }
-@media(max-width: 768px){
 
-   
-}
 .productp, .contactp, .locationp{
     padding: 1rem;
     text-align: center;
@@ -311,6 +308,9 @@ textarea{
         margin: 0;
         
     }
+    .ul1{
+        font-weight: bolder;
+    }
     .shoe{
         align-items: center;
         display: flex;
@@ -326,6 +326,7 @@ textarea{
 
     .header {
         flex-direction: column;
+        gap: 2rem;
     }
     .header .logo {
         font-size: 1.5rem;
@@ -334,6 +335,10 @@ textarea{
     }
     .header-ul{
         font-size: 0.9rem;
+    }
+    p{
+        word-spacing: 1px;
+        line-height: 1.5rem;
     }
 
     .h2tag {
@@ -362,4 +367,10 @@ textarea{
     background: #fff;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+@media(max-width: 380px){
+    .logo{
+        font-size: 0.1rem;
+    }
+   
 }
