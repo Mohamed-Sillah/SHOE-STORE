@@ -24,17 +24,15 @@ body{
 }
 .header{
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    padding: 1rem;
+    padding: 1.8rem;
     justify-content: space-between;
     background-color: #003A6B;
     color: white;
     position: fixed;
+    gap: 1rem;
     right: 0;
     left: 0;
-    
-   
 }
 .header-ul{
     list-style-type: none;
@@ -45,8 +43,7 @@ body{
     justify-content: center;
     align-items: center;
     font-size: 1.3rem;
-    padding: 0 50px;
-    
+    padding: 0 0px;
 }
 a{
     text-decoration: none;
@@ -59,7 +56,6 @@ a:hover{
     max-width: 650px;
     max-height: 250px;
     margin-bottom: 160px;
-    
 }
 img{
     max-width: 100%;
@@ -70,20 +66,21 @@ img{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 3rem;
     align-items: center;
     max-width: 1350px;
     color: black;
-    padding-top: 9.5rem;
-    padding-left: 1.3rem;
-    
+    padding-top: 12.5rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 .about-secp {
     line-height: 2.2rem;
     font-size: 1.1rem;
     margin-right: 0.5rem;
     text-align: justify;
-    
+    flex: 1;
 }
 .productptag{
    text-align: center;
@@ -134,11 +131,11 @@ img{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     justify-content: space-around;
-    
-
 }
 .shoe-1{
     max-width: 300px;
+    display: flex;
+    background-color: red;
 
 }
 .shoe-2{
@@ -153,20 +150,26 @@ img{
 }
 .figure2{
     max-height: 350px;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 .figure3{
     max-height: 350px;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 .figure4{
     max-height: 350px;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 .figure5{
     max-height: 350px;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
+/*.ul1{
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    
+}*/
 .shoe h2{
     text-align: center;
     margin-bottom: 1rem;
@@ -175,7 +178,7 @@ img{
     text-align: justify;
     list-style-type: none;
     text-decoration: none;
-    margin-left: 5rem;
+    
 }
 .shoe ul li .shop-button{
     color: white;
@@ -287,10 +290,7 @@ textarea{
     margin-bottom: 1.7rem;
 }
 @media(max-width: 768px){
-    .about-sec, .figure-1{
-       flex: 1 1 50%;
 
-    }
    
 }
 .productp, .contactp, .locationp{
@@ -300,10 +300,42 @@ textarea{
  
 }
 @media (max-width: 768px) {
+    #about-sec{
+       flex: 1 1 50%;
+        padding: 0;
+    }
+.figure-1{
+    margin-bottom: 0;
+}
+    .about-secp{
+        margin: 0;
+        
+    }
+    .shoe{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .h2tag{
+        margin-bottom: 0;
+    }
+    #about-sec{
+        flex-direction: column;
+        padding: 6rem 2rem 0;
+    }
+
+    .header {
+        flex-direction: column;
+    }
     .header .logo {
         font-size: 1.5rem;
         text-align: center;
+        height: 0;
     }
+    .header-ul{
+        font-size: 0.9rem;
+    }
+
     .h2tag {
         font-size: 2rem;
     }
@@ -311,7 +343,7 @@ textarea{
         font-size: 1rem;
     }
     #product{
-        margin-left: 1.8rem;
+        padding-top: 2rem;
     }
 }
 .shoe img {
@@ -321,9 +353,10 @@ textarea{
     border-radius: 10px;      
 }
 .shoe > div {
+    min-width: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 1rem;
     background: #fff;
