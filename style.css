@@ -329,7 +329,7 @@ textarea{
         gap: 2rem;
     }
     .header .logo {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         text-align: center;
         height: 0;
     }
@@ -373,4 +373,33 @@ textarea{
         font-size: 0.1rem;
     }
    
+}
+@media screen and (max-width: 362px) {
+    .header-ul {
+        flex-wrap: nowrap;
+        
+        font-size: 0.9rem;
+        display: flex;
+        align-items: center;
+        font-size: 0.7rem;
+        font-weight: bolder;
+        justify-content: space-evenly;
+    }
+    .header .logo {
+        font-size: 1.1rem;
+        
+        
+    }
+}
+@media screen and 
+(min-width: 769px) {
+   
+    .header-ul{
+        gap: 3rem;
+    }
+    
+}
+@media screen and 
+(min-width: 917px) {
+    
 }
